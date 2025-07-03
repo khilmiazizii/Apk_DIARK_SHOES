@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.8" version="22.8" Modules="enterprise" RootPath="." Language="id" Id="{2D86EB09-0C09-4878-A26F-69E24C6A8FD2}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Basis data penginstal ini berisi logika dan data yang dibutuhkan untuk menginstal  [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="Universitas Pamulang"/>
+    <ROW Property="ProductCode" Value="1057:{39EA87D6-3079-49B8-8C12-E5104ADD2DF7} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="DIARK_SHOES"/>
+    <ROW Property="ProductVersion" Value="3.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{1920040F-A018-4822-A256-F6E30F834347}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="DIARK_SHOES_Dir" Directory_Parent="APPDIR" DefaultDir="DIARK_~1|DIARK_SHOES" DirectoryOptions="3"/>
+    <ROW Directory="Diark_Shoes_Apk_1_Dir" Directory_Parent="src_Dir" DefaultDir="DIARK_~1|Diark_Shoes_Apk" DirectoryOptions="3"/>
+    <ROW Directory="Diark_Shoes_Apk_Dir" Directory_Parent="classes_Dir" DefaultDir="DIARK_~1|Diark_Shoes_Apk" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="build_Dir" Directory_Parent="DIARK_SHOES_Dir" DefaultDir="build" DirectoryOptions="3"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes" DirectoryOptions="3"/>
+    <ROW Directory="dist_Dir" Directory_Parent="DIARK_SHOES_Dir" DefaultDir="dist" DirectoryOptions="3"/>
+    <ROW Directory="java_1_Dir" Directory_Parent="src_Dir" DefaultDir="java" DirectoryOptions="3"/>
+    <ROW Directory="java_Dir" Directory_Parent="classes_Dir" DefaultDir="java" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="DIARK_SHOES_Dir" DefaultDir="NBPROJ~1|nbproject" DirectoryOptions="3"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private" DirectoryOptions="3"/>
+    <ROW Directory="src_Dir" Directory_Parent="DIARK_SHOES_Dir" DefaultDir="src" DirectoryOptions="3"/>
+    <ROW Directory="text_1_Dir" Directory_Parent="java_1_Dir" DefaultDir="text" DirectoryOptions="3"/>
+    <ROW Directory="text_Dir" Directory_Parent="java_Dir" DefaultDir="text" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{B33D9A2C-932B-4FB9-95CB-654EC04103A3}"/>
+    <ROW Component="ProductInformation" Value="{000FEE9E-03B0-4BF4-B87E-0EECAEE66CD8}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{B33D9A2C-932B-4FB9-95CB-654EC04103A3}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="DIARKSHOES.exe" ComponentId="{37454ED7-2A1A-44D0-BE3A-EC13A27324C8}" Directory_="APPDIR" Attributes="0" KeyPath="DIARKSHOES.exe"/>
+    <ROW Component="DIARK_SHOES.jar" ComponentId="{75595921-346E-4074-ABFB-A8C6DD76B14D}" Directory_="dist_Dir" Attributes="0" KeyPath="DIARK_SHOES.jar" Type="0"/>
+    <ROW Component="Dashboard.form" ComponentId="{AD91250E-7608-4C2B-AE7E-561A72A8ECBF}" Directory_="Diark_Shoes_Apk_1_Dir" Attributes="0" KeyPath="Dashboard.form" Type="0"/>
+    <ROW Component="Dashboard1.class" ComponentId="{F114D429-B687-4255-AF3F-A1F0F938A247}" Directory_="Diark_Shoes_Apk_Dir" Attributes="0" KeyPath="Dashboard1.class" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{000FEE9E-03B0-4BF4-B87E-0EECAEE66CD8}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{EAC27370-6441-458A-8912-51E7CB5A8587}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SimpleDatermat.class" ComponentId="{37C9E250-F339-47B6-8DC9-990FC52873D4}" Directory_="text_Dir" Attributes="0" KeyPath="SimpleDatermat.class" Type="0"/>
+    <ROW Component="SimpleDatermat.java" ComponentId="{9D888841-4362-4D33-9FA7-6D2D1605F09A}" Directory_="text_1_Dir" Attributes="0" KeyPath="SimpleDatermat.java" Type="0"/>
+    <ROW Component="build.xml" ComponentId="{21F18D7E-7129-4559-8229-B4663FC3FEBA}" Directory_="DIARK_SHOES_Dir" Attributes="0" KeyPath="build.xml" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{3D64CDCC-0DCE-4822-9EB0-B3A8B5E6181E}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{7A07018C-5F2D-4C66-B812-264B2D01B912}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="jcalendar0.8.1.jar" ComponentId="{E81F2DA7-C678-485C-B7B6-9B65EE706EB5}" Directory_="lib_Dir" Attributes="0" KeyPath="jcalendar0.8.1.jar" Type="0"/>
+    <ROW Component="private.properties" ComponentId="{D82324C2-2DB5-4FAC-AC98-46D94F2218C9}" Directory_="private_Dir" Attributes="0" KeyPath="private.properties" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\built-jar.properties" SelfReg="false"/>
+    <ROW File="Dashboard1.class" Component_="Dashboard1.class" FileName="DASHBO~1.CLA|Dashboard$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Dashboard$1.class" SelfReg="false"/>
+    <ROW File="Dashboard2.class" Component_="Dashboard1.class" FileName="DASHBO~2.CLA|Dashboard$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Dashboard$2.class" SelfReg="false"/>
+    <ROW File="Dashboard3.class" Component_="Dashboard1.class" FileName="DASHBO~3.CLA|Dashboard$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Dashboard$3.class" SelfReg="false"/>
+    <ROW File="Dashboard.class" Component_="Dashboard1.class" FileName="DASHBO~4.CLA|Dashboard.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Dashboard.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class" Component_="Dashboard1.class" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="FormAdmin1.class" Component_="Dashboard1.class" FileName="FORMAD~1.CLA|FormAdmin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$1.class" SelfReg="false"/>
+    <ROW File="FormAdmin2.class" Component_="Dashboard1.class" FileName="FORMAD~2.CLA|FormAdmin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$2.class" SelfReg="false"/>
+    <ROW File="FormAdmin3.class" Component_="Dashboard1.class" FileName="FORMAD~3.CLA|FormAdmin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$3.class" SelfReg="false"/>
+    <ROW File="FormAdmin4.class" Component_="Dashboard1.class" FileName="FORMAD~4.CLA|FormAdmin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$4.class" SelfReg="false"/>
+    <ROW File="FormAdmin5.class" Component_="Dashboard1.class" FileName="FORMAD~5.CLA|FormAdmin$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$5.class" SelfReg="false"/>
+    <ROW File="FormAdmin6.class" Component_="Dashboard1.class" FileName="FORMAD~6.CLA|FormAdmin$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$6.class" SelfReg="false"/>
+    <ROW File="FormAdmin7.class" Component_="Dashboard1.class" FileName="FORMAD~7.CLA|FormAdmin$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin$7.class" SelfReg="false"/>
+    <ROW File="FormAdmin.class" Component_="Dashboard1.class" FileName="FORMAD~8.CLA|FormAdmin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\FormAdmin.class" SelfReg="false"/>
+    <ROW File="HashUtil.class" Component_="Dashboard1.class" FileName="HASHUT~1.CLA|HashUtil.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\HashUtil.class" SelfReg="false"/>
+    <ROW File="Login1.class" Component_="Dashboard1.class" FileName="LOGIN$~1.CLA|Login$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Login$1.class" SelfReg="false"/>
+    <ROW File="Login2.class" Component_="Dashboard1.class" FileName="LOGIN$~2.CLA|Login$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Login$2.class" SelfReg="false"/>
+    <ROW File="Login3.class" Component_="Dashboard1.class" FileName="LOGIN$~3.CLA|Login$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Login$3.class" SelfReg="false"/>
+    <ROW File="Login4.class" Component_="Dashboard1.class" FileName="LOGIN$~4.CLA|Login$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Login$4.class" SelfReg="false"/>
+    <ROW File="Login.class" Component_="Dashboard1.class" FileName="LOGIN~1.CLA|Login.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Login.class" SelfReg="false"/>
+    <ROW File="Main.class" Component_="Dashboard1.class" FileName="MAIN~1.CLA|Main.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Main.class" SelfReg="false"/>
+    <ROW File="StokBarang1.class" Component_="Dashboard1.class" FileName="STOKBA~1.CLA|StokBarang$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$1.class" SelfReg="false"/>
+    <ROW File="StokBarang10.class" Component_="Dashboard1.class" FileName="STOKBA~2.CLA|StokBarang$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$10.class" SelfReg="false"/>
+    <ROW File="StokBarang11.class" Component_="Dashboard1.class" FileName="STOKBA~3.CLA|StokBarang$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$11.class" SelfReg="false"/>
+    <ROW File="StokBarang12.class" Component_="Dashboard1.class" FileName="STOKBA~4.CLA|StokBarang$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$12.class" SelfReg="false"/>
+    <ROW File="StokBarang13.class" Component_="Dashboard1.class" FileName="STOKBA~5.CLA|StokBarang$13.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$13.class" SelfReg="false"/>
+    <ROW File="StokBarang2.class" Component_="Dashboard1.class" FileName="STOKBA~6.CLA|StokBarang$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$2.class" SelfReg="false"/>
+    <ROW File="StokBarang3.class" Component_="Dashboard1.class" FileName="STOKBA~7.CLA|StokBarang$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$3.class" SelfReg="false"/>
+    <ROW File="StokBarang4.class" Component_="Dashboard1.class" FileName="STOKBA~8.CLA|StokBarang$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$4.class" SelfReg="false"/>
+    <ROW File="StokBarang5.class" Component_="Dashboard1.class" FileName="STOKBA~9.CLA|StokBarang$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$5.class" SelfReg="false"/>
+    <ROW File="StokBarang6.class" Component_="Dashboard1.class" FileName="STOKB~10.CLA|StokBarang$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$6.class" SelfReg="false"/>
+    <ROW File="StokBarang7.class" Component_="Dashboard1.class" FileName="STOKB~11.CLA|StokBarang$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$7.class" SelfReg="false"/>
+    <ROW File="StokBarang8.class" Component_="Dashboard1.class" FileName="STOKB~12.CLA|StokBarang$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$8.class" SelfReg="false"/>
+    <ROW File="StokBarang9.class" Component_="Dashboard1.class" FileName="STOKB~13.CLA|StokBarang$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang$9.class" SelfReg="false"/>
+    <ROW File="StokBarang.class" Component_="Dashboard1.class" FileName="STOKB~14.CLA|StokBarang.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\StokBarang.class" SelfReg="false"/>
+    <ROW File="Transaksi1.class" Component_="Dashboard1.class" FileName="TRANSA~1.CLA|Transaksi$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$1.class" SelfReg="false"/>
+    <ROW File="Transaksi10.class" Component_="Dashboard1.class" FileName="TRANSA~2.CLA|Transaksi$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$10.class" SelfReg="false"/>
+    <ROW File="Transaksi11.class" Component_="Dashboard1.class" FileName="TRANSA~3.CLA|Transaksi$11.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$11.class" SelfReg="false"/>
+    <ROW File="Transaksi12.class" Component_="Dashboard1.class" FileName="TRANSA~4.CLA|Transaksi$12.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$12.class" SelfReg="false"/>
+    <ROW File="Transaksi13.class" Component_="Dashboard1.class" FileName="TRANSA~5.CLA|Transaksi$13.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$13.class" SelfReg="false"/>
+    <ROW File="Transaksi14.class" Component_="Dashboard1.class" FileName="TRANSA~6.CLA|Transaksi$14.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$14.class" SelfReg="false"/>
+    <ROW File="Transaksi15.class" Component_="Dashboard1.class" FileName="TRANSA~7.CLA|Transaksi$15.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$15.class" SelfReg="false"/>
+    <ROW File="Transaksi16.class" Component_="Dashboard1.class" FileName="TRANSA~8.CLA|Transaksi$16.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$16.class" SelfReg="false"/>
+    <ROW File="Transaksi17.class" Component_="Dashboard1.class" FileName="TRANSA~9.CLA|Transaksi$17.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$17.class" SelfReg="false"/>
+    <ROW File="Transaksi18.class" Component_="Dashboard1.class" FileName="TRANS~10.CLA|Transaksi$18.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$18.class" SelfReg="false"/>
+    <ROW File="Transaksi19.class" Component_="Dashboard1.class" FileName="TRANS~11.CLA|Transaksi$19.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$19.class" SelfReg="false"/>
+    <ROW File="Transaksi2.class" Component_="Dashboard1.class" FileName="TRANS~12.CLA|Transaksi$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$2.class" SelfReg="false"/>
+    <ROW File="Transaksi20.class" Component_="Dashboard1.class" FileName="TRANS~13.CLA|Transaksi$20.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$20.class" SelfReg="false"/>
+    <ROW File="Transaksi3.class" Component_="Dashboard1.class" FileName="TRANS~14.CLA|Transaksi$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$3.class" SelfReg="false"/>
+    <ROW File="Transaksi4.class" Component_="Dashboard1.class" FileName="TRANS~15.CLA|Transaksi$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$4.class" SelfReg="false"/>
+    <ROW File="Transaksi5.class" Component_="Dashboard1.class" FileName="TRANS~16.CLA|Transaksi$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$5.class" SelfReg="false"/>
+    <ROW File="Transaksi6.class" Component_="Dashboard1.class" FileName="TRANS~17.CLA|Transaksi$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$6.class" SelfReg="false"/>
+    <ROW File="Transaksi7.class" Component_="Dashboard1.class" FileName="TRANS~18.CLA|Transaksi$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$7.class" SelfReg="false"/>
+    <ROW File="Transaksi8.class" Component_="Dashboard1.class" FileName="TRANS~19.CLA|Transaksi$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$8.class" SelfReg="false"/>
+    <ROW File="Transaksi9.class" Component_="Dashboard1.class" FileName="TRANS~20.CLA|Transaksi$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$9.class" SelfReg="false"/>
+    <ROW File="TransaksiBillPrintable.class" Component_="Dashboard1.class" FileName="TRANS~21.CLA|Transaksi$BillPrintable.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi$BillPrintable.class" SelfReg="false"/>
+    <ROW File="Transaksi.class" Component_="Dashboard1.class" FileName="TRANS~22.CLA|Transaksi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\Diark_Shoes_Apk\Transaksi.class" SelfReg="false"/>
+    <ROW File="SimpleDatermat.class" Component_="SimpleDatermat.class" FileName="SIMPLE~1.CLA|SimpleDatermat.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build\classes\java\text\SimpleDatermat.class" SelfReg="false"/>
+    <ROW File="build.xml" Component_="build.xml" FileName="build.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\build.xml" SelfReg="false"/>
+    <ROW File="DIARK_SHOES.jar" Component_="DIARK_SHOES.jar" FileName="DIARK_~1.JAR|DIARK_SHOES.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\dist\DIARK_SHOES.jar" SelfReg="false"/>
+    <ROW File="jcalendar0.8.1.jar" Component_="jcalendar0.8.1.jar" FileName="JCALEN~1.JAR|jcalendar-0.8.1.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\dist\lib\jcalendar-0.8.1.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorj9.3.0.jar" Component_="jcalendar0.8.1.jar" FileName="MYSQL-~1.JAR|mysql-connector-j-9.3.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\dist\lib\mysql-connector-j-9.3.0.jar" SelfReg="false"/>
+    <ROW File="rs2xml.jar" Component_="jcalendar0.8.1.jar" FileName="rs2xml.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\dist\lib\rs2xml.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="DIARK_SHOES.jar" FileName="README.TXT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\dist\README.TXT" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="build.xml" FileName="manifest.mf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\manifest.mf" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="private.properties" FileName="PRIVAT~1.PRO|private.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="private.properties" FileName="private.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\nbproject\project.xml" SelfReg="false"/>
+    <ROW File="Dashboard.form" Component_="Dashboard.form" FileName="DASHBO~1.FOR|Dashboard.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Dashboard.form" SelfReg="false"/>
+    <ROW File="Dashboard.java" Component_="Dashboard.form" FileName="DASHBO~1.JAV|Dashboard.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Dashboard.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java" Component_="Dashboard.form" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="FormAdmin.form" Component_="Dashboard.form" FileName="FORMAD~1.FOR|FormAdmin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\FormAdmin.form" SelfReg="false"/>
+    <ROW File="FormAdmin.java" Component_="Dashboard.form" FileName="FORMAD~1.JAV|FormAdmin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\FormAdmin.java" SelfReg="false"/>
+    <ROW File="HashUtil.java" Component_="Dashboard.form" FileName="HASHUT~1.JAV|HashUtil.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\HashUtil.java" SelfReg="false"/>
+    <ROW File="Login.form" Component_="Dashboard.form" FileName="LOGIN~1.FOR|Login.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Login.form" SelfReg="false"/>
+    <ROW File="Login.java" Component_="Dashboard.form" FileName="LOGIN~1.JAV|Login.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Login.java" SelfReg="false"/>
+    <ROW File="Main.java" Component_="Dashboard.form" FileName="MAIN~1.JAV|Main.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Main.java" SelfReg="false"/>
+    <ROW File="StokBarang.form" Component_="Dashboard.form" FileName="STOKBA~1.FOR|StokBarang.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\StokBarang.form" SelfReg="false"/>
+    <ROW File="StokBarang.java" Component_="Dashboard.form" FileName="STOKBA~1.JAV|StokBarang.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\StokBarang.java" SelfReg="false"/>
+    <ROW File="Transaksi.form" Component_="Dashboard.form" FileName="TRANSA~1.FOR|Transaksi.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Transaksi.form" SelfReg="false"/>
+    <ROW File="Transaksi.java" Component_="Dashboard.form" FileName="TRANSA~1.JAV|Transaksi.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\Diark_Shoes_Apk\Transaksi.java" SelfReg="false"/>
+    <ROW File="SimpleDatermat.java" Component_="SimpleDatermat.java" FileName="SIMPLE~1.JAV|SimpleDatermat.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\src\java\text\SimpleDatermat.java" SelfReg="false"/>
+    <ROW File="DIARKSHOES.exe" Component_="DIARKSHOES.exe" FileName="DIARKS~1.EXE|DIARK SHOES.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="id" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_id.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="Dashboard1.class"/>
+    <ROW Feature_="MainFeature" Component_="SimpleDatermat.class"/>
+    <ROW Feature_="MainFeature" Component_="build.xml"/>
+    <ROW Feature_="MainFeature" Component_="DIARK_SHOES.jar"/>
+    <ROW Feature_="MainFeature" Component_="jcalendar0.8.1.jar"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="private.properties"/>
+    <ROW Feature_="MainFeature" Component_="Dashboard.form"/>
+    <ROW Feature_="MainFeature" Component_="SimpleDatermat.java"/>
+    <ROW Feature_="MainFeature" Component_="DIARKSHOES.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="DIARKSHOES.exe"/>
+    <ROW IniFile="ClassPath" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[DIARK_SHOES_Dir];[#mysqlconnectorj9.3.0.jar];[#jcalendar0.8.1.jar];[#rs2xml.jar];" Action="0" Component_="DIARKSHOES.exe"/>
+    <ROW IniFile="EmbeddedJar" FileName="DIARKS~1.INI|DiarkShoes.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="APPDIR"/>
+    <ROW IniFile="EmbeddedJar_1" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="DIARKSHOES.exe"/>
+    <ROW IniFile="FailureCheck" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="DIARKSHOES.exe"/>
+    <ROW IniFile="MainClass" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Diark_Shoes_Apk.Dashboard" Action="0" Component_="DIARKSHOES.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="DIARKSHOES.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="DIARKS~2.INI|DIARK SHOES.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="DIARKSHOES.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="DIARK SHOES.exe" Launcher="DIARKSHOES.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#DIARKSHOES.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="2" Platform64="true" EmbJarPath="..\..\..\..\..\..\Downloads\tugas pemrograman\DIARK_SHOES\DIARK_SHOES\DIARK_SHOES\dist\DIARK_SHOES.jar" HasEmbJar="EmbeddedJar_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] tidak dapat diinstal di [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="DIARKSHOES" Directory_="SHORTCUTDIR" Name="DIARKS~1|DIARK SHOES" Component_="DIARKSHOES.exe" Target="[#DIARKSHOES.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
